@@ -1,6 +1,6 @@
 package com.mkilikoglu.demo.dto;
 
-import com.mkilikoglu.demo.entity.Kullanici;
+import com.mkilikoglu.demo.entity.User;
 import lombok.*;
 
 import java.io.Serializable;
@@ -11,7 +11,7 @@ import java.io.Serializable;
 @ToString
 @EqualsAndHashCode
 @Value
-public class KullaniciDTO implements Serializable {
+public class UserDTO implements Serializable {
     private static final long serialVersionUID = 1L;
     private String adi;
     private String soyadi;
@@ -19,7 +19,7 @@ public class KullaniciDTO implements Serializable {
     private String kullaniciAdi;
     private String email;
 
-    public static KullaniciDTO of(Kullanici kullanici) {
-        return new KullaniciDTO(kullanici.getAdi(), kullanici.getSoyadi(), kullanici.getTcNo(), kullanici.getKullaniciAdi(),kullanici.getEmail());
-    }
+    /*public static UserDTO of(User user) {
+        return new UserDTO(user.getAdi(), user.getSoyadi(), user.getTcNo(), user.getKullaniciAdi(), user.getEmail());
+    }*/
 }
